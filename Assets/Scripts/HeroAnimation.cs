@@ -4,36 +4,28 @@ using UnityEngine;
 
 public class HeroAnimation : MonoBehaviour
 {
-//ссылочная переменная для аниматора
-Animator anim;
-//ссылочная переменная для rigidbody2D
-Rigidbody2D rb;
-//ссылочная переменная для HeroMove
-HeroMove pm;
+	[SerializeField] private Animator anim;
+	[SerializeField] private Rigidbody2D rb;
+	[SerializeField] private HeroMove pm;
 
-void Start () {
-//делаем ссылку на Animator
-anim = GetComponent <Animator> ();
-//делаем ссылку на Rigidbody2D
-rb = GetComponent <Rigidbody2D> ();
-//делаем ссылку на PlayerMove
-pm = GetComponent <HeroMove> ();
-}
+	void Start()
+	{
+		anim = GetComponent<Animator>();
+		rb = GetComponent<Rigidbody2D>();
+		pm = GetComponent<HeroMove>();
+	}
 
-void Update () {
-//проверка, находится ли крыса на земле
-if (pm.isGrounded) {
-//меняем параметр isJumping на false
-anim.SetBool ("isJumping", false);
-//меняем параметр speed. Используем абсолютное значение вектора скорости по х
-anim.SetFloat ("speed", Mathf.Abs (rb.velocity.x));
-// если крыса не на земле
-} else {
-//меняем параметр speed на 0
-anim.SetFloat ("speed", 0);
-//меняем параметр isJumping на true
-anim.SetBool ("isJumping", true);
-}
-}
-
+	void Update()
+	{
+		if (pm.isGrounded)
+		{
+			anim.SetBool ("isJumping", false);
+			anim.SetFloat ("speed", Mathf.Abs (rb.velocity.x));
+		}
+		else
+		{
+			anim.SetFloat ("speed", 0);
+			anim.SetBool ("isJumping", true);
+		}
+	}
 }
