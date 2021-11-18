@@ -1,4 +1,4 @@
-<h1 align="center">The Cave Adventures, v0.1.2</h1>
+<h1 align="center">The Cave Adventures, v0.1.3</h1>
 <h4 al
 align="center">The Cave Adventures - это паркурный 2D-платформер.</h4>
 
@@ -32,4 +32,4 @@ align="center">The Cave Adventures - это паркурный 2D-платфор
 
 | Версия       | Поддержка          |
 | -------------| ------------------ |
-| v0.1.2 InDev | :white_check_mark: |
+| v0.1.3 InDev | :white_check_mark: |
