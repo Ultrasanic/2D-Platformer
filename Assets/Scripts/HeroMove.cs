@@ -19,17 +19,19 @@ public class HeroMove : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetButtonDown("Jump") && isGrounded) {
-			Jump(0);
+		if (Input.GetButtonDown("Jump") && isGrounded)
+		{
+			Jump();
 			isGrounded = false;
 		}
 	}
 
-	public void Jump(float additionalForce) {
-		rb.AddForce (Vector2.up * (jumpForce + additionalForce), ForceMode2D.Impulse);
+	public void Jump(float additional = 0) {
+		rb.AddForce (Vector2.up * (jumpForce + additional) , ForceMode2D.Impulse);
 	}
 
-	void FixedUpdate() {
+	void FixedUpdate()
+	{
 		isGrounded = Physics2D.OverlapPoint(groundCheck.position, whatIsGround);
 		float x = Input.GetAxis("Horizontal");
 		Vector3 move = new Vector3(x * speed, rb.velocity.y, 0f);
@@ -38,7 +40,7 @@ public class HeroMove : MonoBehaviour
 			TurnTheEnemy();
 		if (x > 0 && isLookingLeft)
 			TurnTheEnemy();
-	}
+		}
 
 	void TurnTheEnemy()	
 	{

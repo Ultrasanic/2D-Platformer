@@ -17,7 +17,7 @@ public class HeroAnimation : MonoBehaviour
 
 	void Update()
 	{
-		if (pm.isGrounded)
+		if (pm == null || pm.isGrounded)
 		{
 			anim.SetBool ("isJumping", false);
 			anim.SetFloat ("speed", Mathf.Abs (rb.velocity.x));

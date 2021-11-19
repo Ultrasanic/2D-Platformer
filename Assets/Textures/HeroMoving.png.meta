@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 39e99b36954744a63adce5ecc4b65590
+guid: aefae6106c853463284e1cb852638453
 TextureImporter:
   internalIDToNameTable:
-  - first:
-      213: -3760313306355611776
-    second: HeroMoving_0
   - first:
       213: 5067519573282616758
     second: HeroMoving_1
   - first:
-      213: 1183111156597077466
-    second: HeroMoving_2
+      213: -8530561751052716856
+    second: HeroMoving_4
   - first:
-      213: -2684997835456951506
-    second: HeroMoving_3
+      213: 47133397394467694
+    second: HeroMoving_5
+  - first:
+      213: 1358805511933623817
+    second: HeroMoving_6
+  - first:
+      213: 6070912136727486083
+    second: HeroMoving_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,34 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HeroMoving_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 434.75
-        height: 620
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 087cf7a88fea0dbc0800000000000000
-      internalID: -3760313306355611776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: HeroMoving_1
       rect:
         serializedVersion: 2
-        x: 434
-        y: 0
-        width: 434.75
-        height: 620
+        x: 112
+        y: 450
+        width: 112
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,13 +127,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroMoving_2
+      name: HeroMoving_4
       rect:
         serializedVersion: 2
-        x: 868
-        y: 0
-        width: 434.75
-        height: 620
+        x: 0
+        y: 297
+        width: 112
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad535ca14514b6010800000000000000
-      internalID: 1183111156597077466
+      spriteID: 8c4f7f5c84b5d9980800000000000000
+      internalID: -8530561751052716856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeroMoving_3
+      name: HeroMoving_5
       rect:
         serializedVersion: 2
-        x: 1302
-        y: 0
-        width: 434.75
-        height: 620
+        x: 112
+        y: 297
+        width: 112
+        height: 144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +162,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b45e2c1b8fcbad0800000000000000
-      internalID: -2684997835456951506
+      spriteID: e6b21c0439377a000800000000000000
+      internalID: 47133397394467694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroMoving_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 297
+        width: 112
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e75a1f9627bd210800000000000000
+      internalID: 1358805511933623817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeroMoving_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 297
+        width: 112
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38edf3c5c66304450800000000000000
+      internalID: 6070912136727486083
       vertices: []
       indices: 
       edges: []
